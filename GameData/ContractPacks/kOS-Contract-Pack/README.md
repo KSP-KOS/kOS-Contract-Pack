@@ -11,8 +11,10 @@ PlayerControlsBanned
 
 A PlayerControlsBanned parameter is considered satisfied whenever
 the manual controls listed in its attributes are in their zeroed
-(neutral) state, and considered failed if any of them are not
-in their zeroed state.
+(neutral) state, and considered unsatisfied if any of them are not
+in their zeroed state.  It is intended to be used in conjunction
+with a duration parameter to enforce that the controls are not
+touched during a time period of another contract parameter.
 
 For example, the following example is a PlayerControlsBanned
 parameter that disallows the use of manual pitch, pitch trim,
